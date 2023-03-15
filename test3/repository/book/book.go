@@ -36,3 +36,9 @@ func (r *BookRepository) Update(book book.Book) error {
 func (r *BookRepository) Delete(book book.Book) error {
 	return config.DB.Debug().Delete(&book).Error
 }
+
+func (r *BookRepository) ListAll() []book.Book {
+	var books []book.Book
+	config.DB.Debug().Find(&books)
+	return books
+}

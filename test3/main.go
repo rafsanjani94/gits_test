@@ -20,5 +20,7 @@ func main() {
 	r.PUT("/book/:id", login.Auth, handler.UpdateBook)
 	r.DELETE("/book/:id", login.Auth, handler.DeleteBook)
 
+	r.GET("/pdf/books", handler.PdfBook)
+
 	r.Run(":8080")
 }

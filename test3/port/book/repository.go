@@ -8,4 +8,5 @@ type BookRepository interface {
 	GetById(id string) book.Book
 	Update(book book.Book) error
 	Delete(book book.Book) error
+	ListAll() []book.Book
 }

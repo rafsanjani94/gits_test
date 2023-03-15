@@ -1,0 +1,16 @@
+================
+Sebuah perusahaan memiliki aplikasi chat yang didalamnya terdapat banyak room. Dan didalam room terdapat beberapa member.
+
+Contoh:
+room = "engineer" berisi member = "devi", "eko", "irianto", "eka", "bagus", "putranto"
+room = "product" berisi member = "bayu", "eko",  "putranto", "adi", "persada", "bagus"
+
+Cari room yang berisi orang-orang yang sama dengan input berupa array string members. 
+Dimana array string tersebut adalah nama dari orang-orang yang akan kita cari.
+
+Contoh:
+members = ["putranto", "eko"]
+output = ["engineer", "product"]
+
+members = ["putranto", "adi"]
+output = ["engineer"]

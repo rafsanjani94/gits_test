@@ -85,3 +85,8 @@ func (s *BookService) DeleteBook(bookId string) error {
 
 	return nil
 }
+
+func (s *BookService) ListBookAll() ([]book.Book, error) {
+	books := s.bookRepo.ListAll()
+	return books, nil
+}

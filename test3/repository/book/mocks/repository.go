@@ -71,6 +71,22 @@ func (_m *BookRepository) List(authorId int) []book.Book {
 	return r0
 }
 
+// ListAll provides a mock function with given fields:
+func (_m *BookRepository) ListAll() []book.Book {
+	ret := _m.Called()
+
+	var r0 []book.Book
+	if rf, ok := ret.Get(0).(func() []book.Book); ok {
+		r0 = rf()
+	} else {
+		if ret.Get(0) != nil {
+			r0 = ret.Get(0).([]book.Book)
+		}
+	}
+
+	return r0
+}
+
 // Update provides a mock function with given fields: _a0
 func (_m *BookRepository) Update(_a0 book.Book) error {
 	ret := _m.Called(_a0)

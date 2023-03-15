@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "gits/test3/proto/book";
+
+package book;
+
+service BookService {
+    rpc ListBook (BooksQuery) returns (stream Book) {}
+}
+
+message BooksQuery {
+    
+}
+
+message Book {
+    int32 id = 1;
+    string name = 2;
+}
